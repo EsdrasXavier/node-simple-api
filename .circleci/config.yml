@@ -7,7 +7,7 @@ jobs:
           cache-path: ~/project/node_modules
           override-ci-command: npm install
       - run: npm run test
-      - discord/status:
+      - discord/notify:
           mentions: "730913979894988801"
           only_for_branches: master
           webhook: https://discordapp.com/api/webhooks/758125240144101426/XeW2MJ4ZJesv0S483ogYvZpT3GjkxIw2Pg3m9fBTbVrXpAiwWMiKTL78OYno0Mo2Sg5g
