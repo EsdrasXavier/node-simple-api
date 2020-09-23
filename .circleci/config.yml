@@ -14,10 +14,10 @@ jobs:
     executor: node-cointainer
     steps:
       - run: npm run test
-      - discord/status:
-          mentions: "USERID1,USERID2,&ROLE_ID1,here,everyone"
-          only_for_branches: master
-          webhook: webhook
+      # - discord/status:
+      #     mentions: "USERID1,USERID2,&ROLE_ID1,here,everyone"
+      #     only_for_branches: master
+      #     webhook: webhook
 
 workflows:
   "Test API":
