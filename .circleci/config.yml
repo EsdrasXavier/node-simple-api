@@ -7,8 +7,12 @@ jobs:
           cache-path: ~/project/node_modules
           override-ci-command: npm install
       - run: npm run test
-      - discord/notify:
-          mentions: "730913979894988801"
+
+      - discord/status:
+          failure_message: ":red_circle: Seu estúpido você quebrou o projeto. Pipeline: $CIRCLE_JOB"
+          success_message: "Pipeline rodado com sucesso"
+          success_mentions: "Dante Auditore#4440"
+          failure_mentions: "730913979894988801"
           webhook: https://discordapp.com/api/webhooks/758125240144101426/XeW2MJ4ZJesv0S483ogYvZpT3GjkxIw2Pg3m9fBTbVrXpAiwWMiKTL78OYno0Mo2Sg5g
 
 orbs:
