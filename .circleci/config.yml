@@ -9,11 +9,9 @@ jobs:
       - run: npm run test
 
       - discord/status:
-          failure_message: ":red_circle: Seu estúpido você quebrou o projeto. Pipeline: $CIRCLE_JOB"
+          failure_message: ":face_with_symbols_over_mouth: $CIRCLE_USERNAME Seu estúpido! Você quebrou o projeto na branch $CIRCLE_BRANCH. Pipeline: $CIRCLE_JOB"
           success_message: "Pipeline rodado com sucesso"
-          success_mentions: "Dante Auditore#4440"
-          failure_mentions: "730913979894988801"
-          webhook: https://discordapp.com/api/webhooks/758125240144101426/XeW2MJ4ZJesv0S483ogYvZpT3GjkxIw2Pg3m9fBTbVrXpAiwWMiKTL78OYno0Mo2Sg5g
+          webhook: https://discordapp.com/api/webhooks/758836655007465552/Km8D68GqmqB17SCDfp_PbayMUNXRWgy-0tcJg4xl8s8fIgL4_IIZJBlWqI8BqjMwuE-L
 
 orbs:
   node: circleci/node@3.0.0
