@@ -6,7 +6,7 @@ const DEFAULT_NAME = 'Task';
 exports.listAllTasks = function (req, res) {
   let todoList = [];
 
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 30; i++) {
     const index = Math.floor(Math.random() * 3);
     todoList.push(new Task(`${DEFAULT_NAME} ${i}`, new Date(), statusEnum[index]));
   }
