@@ -14,7 +14,7 @@ describe('Test endpoint /tasks', function () {
     expect(response)
       .to.have.nested.property('data')
       .that.is.an('array')
-      .with.lengthOf(30);
+      .with.lengthOf(50);
   });
 
   it('Post new task', async function () {
