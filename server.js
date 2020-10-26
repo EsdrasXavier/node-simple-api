@@ -1,3 +1,18 @@
+
+require("appdynamics").profile({
+  controllerHostName: 'amelia202010260907519',
+  controllerPort: 443,
+
+  // If SSL, be sure to enable the next line
+  controllerSslEnabled: true,
+  accountName: 'amelia202010260907519',
+  accountAccessKey: 't1cmnpcj7y8x',
+  applicationName: 'Test',
+  tierName: 'Test',
+  nodeName: 'process' // The controller will automatically append the node name with a unique number
+});
+
+
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
