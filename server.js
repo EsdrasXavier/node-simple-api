@@ -1,13 +1,13 @@
 require("appdynamics").profile({
-  controllerHostName: 'amelia202010260907519.saas.appdynamics.com',
+  controllerHostName: 'grace202011220844374.saas.appdynamics.com',
   controllerPort: 443,
 
   // If SSL, be sure to enable the next line
   controllerSslEnabled: true,
-  accountName: 'amelia202010260907519',
-  accountAccessKey: 't1cmnpcj7y8x',
-  applicationName: 'Teste',
-  tierName: 'Teste',
+  accountName: 'grace202011220844374',
+  accountAccessKey: 'zfaazz9h3n17',
+  applicationName: 'node-simple-api',
+  tierName: 'node-simple-api',
   nodeName: 'process' // The controller will automatically append the node name with a unique number
 });
 
