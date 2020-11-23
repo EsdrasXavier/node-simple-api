@@ -11,4 +11,9 @@ module.exports = function (app) {
   app.route('/tasks')
     .get(todoList.listAllTasks)
     .post(todoList.createATask);
+
+  app.route('/error')
+    .get(() => {
+      throw "ERRORR";
+    });
 };
